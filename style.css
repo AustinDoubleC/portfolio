@@ -366,6 +366,11 @@ label{
     .subtitle{
         padding-top:100px ;
     }
+    .heroSkills{
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width:600px){
@@ -383,6 +388,10 @@ label{
     }
     #myPhoto{
         margin-bottom: 30px;
+    }
+    .heroSkills{
+        font-size: 12px;
+        margin-right: 20px;
     }
 }
 @media screen and (max-width:480px){
