@@ -16,6 +16,7 @@ white
 body{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 h1{
@@ -24,7 +25,14 @@ h1{
 
 .subtitle{
     padding-top: 54px;
+    font-size: 40px;
+    margin-bottom: 0px;
 }
+
+.fa-brands{
+    margin: 20px 30px 50px 0px;
+}
+
 nav{
     display:flex;
     justify-content: space-between;
@@ -80,6 +88,7 @@ ul li a:hover{
 }
 
 #hero{
+    font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     width: 100%;
     height: 500px;
@@ -110,7 +119,10 @@ hr{
     background-color: #EEEEEE;
 }
 
-#about-me{
+#about-me,
+#projects,
+#skills,
+#contact{
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -121,15 +133,31 @@ hr{
     color: #FFE45C;
 }
 #myPhoto{
-    max-width: 200px;
-    max-height: 200px;
+    height: 200px;
+    max-width: 170px;
     border-radius: 50%;
+    box-shadow: 5px 5px 2px #555555
+}
+
+
+
+#myIntro{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #00468B;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #EEEEEE;
+    box-shadow: 10px 10px 1px #555555
 }
 
 #about-container{
     display: flex;
     width: 80%;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
 #about-container p{
@@ -137,13 +165,36 @@ hr{
 }
 
 #projects-container{
-    width: 100%;
+    width: 85%;
     height: 500px;
     background-color: #00468B;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+#teaCozy{
+    background-image: url(images/teacozy.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #128fC8;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+/*
+Skills
+*/
+
+#skills p{
+    max-width: 1000px;
+    margin: 20px 50px;
+    font-size: 16px;
 }
 
 #skills-container{
-    width: 100%;
+    width: 85%;
+    border-radius: 25px;
     min-height: 250px;
     background-color: #00468B;
     display: flex;
@@ -158,12 +209,57 @@ hr{
     margin: 25px 50px;
 }
 
-footer{
-    background-color: #128fC8;
-    color: #EEEEEE;
+/*
+
+Contact
+
+*/
+
+
+footer{  
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#allContacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00468B;
+    width: 100%;
+    color: #EEEEEE;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+#socialMedia{
+    max-width: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#socialMedia a{
+    text-decoration: none;
+    color: white;
+}
+
+#socialMedia a:hover,
+#socialMedia a:active{
+    color: #FFE45C;
+}
+
+/*
+Form
+*/
+
+form p{
+    font-size: 24px;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 #input-container{
@@ -173,12 +269,57 @@ footer{
 .input{
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 #input-message{
-    max-width: 600px;
+    width:500px;
     height: 100px;
     text-align: start;
+    font-size: 16px;
+    border-radius: 5px;
 }
+#input-name{
+    font-size: 16px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#input-name:focus,
+#input-email:focus,
+#input-message:focus{
+    outline-color: #FFE45C;
+    outline-style:double;
+    outline-width: 2px;
+}
+
+
+#input-email{
+    font-size: 16px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#btnSubmit{
+    background-color: #FFE45C;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: #00468B 3px solid;
+    color: #00468B;
+}
+#btnSubmit:hover{
+    cursor: pointer;
+    border: #128fC8 3px solid;
+    color: #128fC8;
+}
+
+#btnSubmit:active{
+    cursor: pointer;
+    background-color:#128fC8;
+    color:#EEEEEE
+}
+
 @media screen and (max-width:1200px) {
     ul li a{
         font-size: 20px;
@@ -186,6 +327,9 @@ footer{
     }
     #logo{
         margin-right: 10px;
+    }
+    #input-message{
+        width:420px;
     }
 }
 
@@ -200,6 +344,7 @@ footer{
     #logo{
         margin-right: 10px;
     }
+
 }
 
 @media screen and (max-width:900px){
@@ -223,5 +368,11 @@ footer{
     ul li{
         margin: 0px 2px;
     }
-    
+    #about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #myPhoto{
+        margin-bottom: 30px;
+    }
 }
