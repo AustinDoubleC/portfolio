@@ -393,6 +393,10 @@ label{
         font-size: 12px;
         margin-right: 20px;
     }
+    #input-container{
+        flex-direction: column;
+
+    }
 }
 @media screen and (max-width:480px){
     ul li a{
