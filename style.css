@@ -403,6 +403,9 @@ label{
     nav{
         flex-direction: column;
     }
+    #hero{
+        margin: 86px auto 0px auto;
+    }
     #logo{
         margin-bottom:0px
     }
