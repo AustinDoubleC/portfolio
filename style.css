@@ -440,7 +440,10 @@ label{
         flex-direction: column;
     }
 
-    #input-message,
+    #input-message{
+        width: 300px;
+    }
+    
     #input-name,
     #input-email{
         width:250px;
