@@ -13,8 +13,6 @@ white
 */
 
 html,body {
-    margin:0;
-    padding:0;
     overflow-x:hidden;
 }
 
@@ -385,5 +383,18 @@ label{
     }
     #myPhoto{
         margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    ul li a{
+        font-size: 12px;
+        padding: 3px 1px;
+    }
+    ul li{
+        margin: 0px 1px;
+    }
+
+    .heroSkills{
+        margin-right: 20px;
     }
 }
