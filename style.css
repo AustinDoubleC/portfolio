@@ -1,0 +1,227 @@
+/*
+Color
+blue
+#00468B
+#128fC8;
+#2ECBE9;
+
+mustard
+#FFE45C;
+
+white
+#EEEEEE;
+*/
+
+
+body{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+}
+
+.subtitle{
+    padding-top: 54px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #128fC8;
+    color: #EEEEEE;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 5;
+    width: 100%;
+    top:0;
+    margin: 0;
+}
+
+#doubleC{
+    color: #EEEEEE;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 25px;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+ul li a:hover{
+    background-color: #2ECBE9;
+    color: #FFE45C;
+}
+
+
+#logo{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 25px;
+}
+#separator{
+    color: #00468B;
+}
+
+#hero{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/hero-keyboard.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.heroText{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.heroSkills{
+    margin-right: 50px;
+    display: inline;
+}
+
+hr{
+    z-index: 3;
+    background-color: #EEEEEE;
+}
+
+#about-me{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+.myName{
+    color: #FFE45C;
+}
+#myPhoto{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+#about-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+#about-container p{
+    max-width: 700px;
+}
+
+#projects-container{
+    width: 100%;
+    height: 500px;
+    background-color: #00468B;
+}
+
+#skills-container{
+    width: 100%;
+    min-height: 250px;
+    background-color: #00468B;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills-container img{
+    height: 100px;
+    margin: 25px 50px;
+}
+
+footer{
+    background-color: #128fC8;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-container{
+    display: flex;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+#input-message{
+    max-width: 600px;
+    height: 100px;
+    text-align: start;
+}
+@media screen and (max-width:1200px) {
+    ul li a{
+        font-size: 20px;
+        padding: 5px 8px;
+    }
+    #logo{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    ul li a{
+        font-size: 16px;
+        padding: 3px 5px;
+    }
+    ul li{
+        margin: 0px 5px;
+    }
+    #logo{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:900px){
+    nav{
+        flex-direction: column;
+    }
+    #logo{
+        margin-bottom:0px
+    }
+    .subtitle{
+        padding-top:100px ;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    ul li a{
+        font-size: 16px;
+        padding: 3px 3px;
+    }
+    ul li{
+        margin: 0px 2px;
+    }
+    
+}
