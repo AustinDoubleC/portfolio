@@ -251,13 +251,13 @@ Skills
     display: flex;
     flex-wrap: wrap;
     margin: 0px auto;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 #skills-container img{
     height: 100px;
-    margin: 25px 25px;
+    margin: 25px 10px;
 }
 
 /*
