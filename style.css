@@ -12,6 +12,11 @@ white
 #EEEEEE;
 */
 
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 
 body{
     margin: 0 auto;
@@ -86,6 +91,10 @@ ul li a:hover{
 }
 #separator{
     color: #00468B;
+}
+
+main{
+    width: 100%;
 }
 
 #hero{
@@ -221,6 +230,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 #allContacts{
@@ -375,14 +385,5 @@ label{
     }
     #myPhoto{
         margin-bottom: 30px;
-    }
-    body {
-        -ms-overflow-style: none; /* for Internet Explorer, Edge */
-        scrollbar-width: none; /* for Firefox */
-        overflow-y: scroll; 
-    }
-    
-    body::-webkit-scrollbar {
-        display: none; /* for Chrome, Safari, and Opera */
     }
 }
