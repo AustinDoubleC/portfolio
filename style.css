@@ -376,17 +376,13 @@ label{
     #myPhoto{
         margin-bottom: 30px;
     }
-}
-
-@media screen and (max-width:480px){
-
-body {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
-}
-
-body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
+    body {
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+    }
+    
+    body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
 }
