@@ -210,6 +210,16 @@ hr{
     border-radius: 20px;
 }
 
+#crypto{
+    background-image: url(images/crypto_app.png);
+    background-color: #128fC8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+}
+
 .project-description{
     margin-top: 200px;
     display: flex;
