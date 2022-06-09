@@ -212,13 +212,12 @@ hr{
 
 #crypto{
     background-image: url(images/crypto_app.png);
-    background-color: #2ECBE9;
+    background-color: #128fC8;
     background-size: contain;
     background-repeat: no-repeat;
     width: 350px;
     height: 400px;
     border-radius: 20px;
-    color:#FFE45C;
 }
 
 .project-description{
