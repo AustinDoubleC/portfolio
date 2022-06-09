@@ -49,6 +49,7 @@ nav{
     width: 100%;
     top:0;
     margin: 0;
+    min-height: 54px;
 }
 
 #doubleC{
@@ -57,17 +58,17 @@ nav{
     font-weight: 400;
 }
 
-ul{
+.nav-menu{
     display: flex;
     list-style: none;
     margin: 10px 25px;
 }
 
-ul li{
+.nav-menu li{
     margin: 0 10px;
 }
 
-ul li a{
+.nav-menu li a{
     text-decoration: none;
     color: #EEEEEE;
     padding: 8px 15px;
@@ -81,6 +82,20 @@ ul li a:hover{
     color: #FFE45C;
 }
 
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EEEEEE;
+}
 
 #logo{
     font-weight: bold;
@@ -383,44 +398,27 @@ label{
 }
 
 @media screen and (max-width:1200px) {
-    ul li a{
-        font-size: 20px;
-        padding: 5px 8px;
-    }
     #logo{
         margin-right: 10px;
     }
     #input-message{
         width:420px;
     }
-}
-
-@media screen and (max-width:1000px) {
-    ul li a{
-        font-size: 16px;
-        padding: 3px 5px;
-    }
-    ul li{
-        margin: 0px 5px;
-    }
-    #logo{
-        margin-right: 10px;
+    .nav-menu li a{
+        font-size: 20px;
+        padding: 5px;
     }
 
 }
 
-@media screen and (max-width:900px){
-    nav{
-        flex-direction: column;
-    }
-    #hero{
-        margin: 86px auto 0px auto;
-    }
+
+@media screen and (max-width:1000px){
+
     #logo{
         margin-bottom:0px
     }
     .subtitle{
-        padding-top:100px ;
+        padding-top:54px ;
     }
     .heroSkills{
         margin-right: 20px;
@@ -430,17 +428,44 @@ label{
         height: 80px;
         margin: 25px 5px;
     }
+
+        /*for hamburger*/
+        .hamburger{
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .nav-menu{
+            position: fixed;
+            left: -110%;
+            top:54px;
+            gap:0;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #00468B;
+            margin: 0 auto;
+            opacity: 0.8;
+        }
+        .nav-menu li a:hover{
+            padding: 0px;
+            background-color: #00468B;
+        }
+        .nav-menu.active{
+            left: 0;
+        }
 }
 
 @media screen and (max-width:600px){
 
-    ul li a{
-        font-size: 16px;
-        padding: 3px 3px;
-    }
-    ul li{
-        margin: 0px 2px;
-    }
     #about-container{
         flex-direction: column;
         align-items: center;
@@ -464,15 +489,9 @@ label{
     #input-email{
         width:250px;
     }
+
 }
 @media screen and (max-width:480px){
-    ul li a{
-        font-size: 12px;
-        padding: 3px 1px;
-    }
-    ul li{
-        margin: 0px 1px;
-    }
 
     .heroSkills{
         margin-right: 20px;
