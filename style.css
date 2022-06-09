@@ -205,6 +205,12 @@ hr{
     color: #EEEEEE;
 }
 
+.project-container:hover,
+.project-container:active{
+    filter: saturate(130%);
+    filter: brightness(1.2);
+}
+
 #teaCozy{
     background-image: url(images/teacozy.png);
     background-color: #128fC8;
@@ -235,8 +241,26 @@ hr{
     border-radius: 20px;
 }
 
+#recipe{
+    background-image: url(images/receipe.png);
+    background-color: #128fC8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+}
+.project-link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .project-description{
-    margin-top: 200px;
+    margin-top: 185px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +269,6 @@ hr{
 .project-description p{
     margin-top: 3px;
 }
-
 
 .project-title{
     font-weight: bold;
