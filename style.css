@@ -214,7 +214,6 @@ hr{
 .project-container:hover,
 .project-container:active{
     filter: saturate(130%);
-    filter: brightness(1.2);
 }
  
 #teaCozy{
