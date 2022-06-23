@@ -234,7 +234,9 @@ hr{
 #fitness-pro{
     background-image: url(images/fitness-pro.png);
 }
-
+#handy-app{
+    background-image: url(images/handy.png);
+}
 .project-link{
     cursor: pointer;
     text-decoration: none;
